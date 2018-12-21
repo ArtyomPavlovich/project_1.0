@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/HeaderAndButton.css">
+    <link rel="stylesheet" type="text/css" href="css/ContainerForContacrs.css">
+    <link rel="stylesheet" type="text/css" href="css/ForCheckIn.css">
+    <link rel="stylesheet" type="text/css" href="css/ForFooter.css">
+    <title>Vino W</title>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div class="header">
+
+    <a href="index.html">О нас</a>
+    <a href="menu.html">Карта вин</a>
+    <a href="index.html"><img src="img/img01.jpg" alt=""></a>
+    <a href="developments.html">События</a>
+    <a href="contacts.html">Контакты</a>
+</div>
+
+<div class="chapter">
+    <h1>Контакты</h1>
+</div>
+
+<div class="grid-container">
+    <div class="content-contact">
+        <h2 style="color: #f2f2f2">Адрес</h2>
+        <p>г. Гродно ул. Малая Троицкая, д. 12</p>
+        <h2 style="color: #f2f2f2">Телефон</h2>
+        <p>8 029 8444 552</p>
+        <h2 style="color: #f2f2f2">Часы работы</h2>
+        <p>С понедельника по четверг, воскресенье с 11. 00 до 23. 00<br>
+            Пятница, суббота с 11. 00 до 2. 00</p>
+    </div>
+
+    <form id="regForm" action="">
+
+        <h1>Регистрация</h1>
+
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">Ваше имя
+            <p><input placeholder="Имя..." oninput="this.className = ''"></p>
+            <p><input placeholder="Фамилия..." oninput="this.className = ''"></p>
+        </div>
+
+        <div class="tab">Контактная информация
+            <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
+            <p><input placeholder="Номер тел..." oninput="this.className = ''"></p>
+        </div>
+
+        <div class="tab">Дата рождения
+            <p><input placeholder="День" oninput="this.className = ''"></p>
+            <p><input placeholder="Месяц" oninput="this.className = ''"></p>
+            <p><input placeholder="Год" oninput="this.className = ''"></p>
+        </div>
+
+        <div class="tab">Логин
+            <p><input placeholder="Имя пользователя..." oninput="this.className = ''"></p>
+            <p><input placeholder="Пароль..." oninput="this.className = ''"></p>
+        </div>
+
+        <div style="overflow:auto;">
+            <div style="float:right;">
+                <button class="button" type="button" id="prevBtn" onclick="nextPrev(-1)">Вернуться</button>
+                <button class="button" type="button" id="nextBtn" onclick="nextPrev(1)">Далее</button>
+            </div>
+        </div>
+
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+        </div>
+
+    </form>
+</div>
+
+
+
+<div class="footer">
+    <img src="img/img_2.png" alt="">
+    <p class="text">
+        Винная крама Вино Ви <br>
+        Адрес<br>
+        Гродно ул. малая троицкая, д. 12<br>
+    </p>
+    <p class="text">
+        Телефон<br>
+        8 029 8444 552<br>
+    </p>
+</div>
+
+<div class="link">
+    <a href=""><img src="img/insta.png" alt=""></a>
+    <a href=""><img src="img/face.png" alt=""></a>
+    <a href=""><img src="img/tvit.png" alt=""></a>
+    <a href=""><img src="img/veber.png" alt=""></a>
+</div>
+
+
+<script src="js/ScriptForReg.js"></script>
+<script type="text/javascript" src="js/ForHeader.js"></script>
+</body>
+</html>
